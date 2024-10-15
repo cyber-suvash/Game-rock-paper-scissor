@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url(https://thumbs.dreamstime.com/b/rock-paper-scissors-kid-hand-whtie-background-60193164.jpg);
+    background-size: cover;
+}
+h2{
+    background-color:navy;
+    color: white;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 3rem;
+
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 4rem;
+
+}
+.choice{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.choice:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 5px 5px 6px black;
+}
+
+#rock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 1.8rem;
+    
+}
+
+#paper{
+    background-color: blueviolet;
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.8rem;
+
+}
+
+#scissor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    height: 20vh;
+    width: 10vw;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 1.8rem;
+
+}
+
+
+
+
+.score-board{
+    display: flex; 
+    justify-content: center;
+    gap: 5rem;
+    font-size: 2rem;
+    margin-top: 40px;
+    font-weight: 900;
+
+}
+
+
+.play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ 
+    
+}
+#start{
+    background-color: cadetblue;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 50px;
+    display: inline;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+/* Base styles (keep your original CSS here) */
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    h2 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+  
+    .container {
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+  
+    #rock, #paper, #scissor {
+      height: 15vh;
+      width: 15vw;
+      font-size: 1.5rem;
+    }
+  
+    .score-board {
+      font-size: 1.8rem;
+      margin-top: 30px;
+    }
+  
+    #start {
+      font-size: 1.8rem;
+      margin-top: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  
+    .container {
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+  
+    #rock, #paper, #scissor {
+      height: 120px;
+      width: 120px;
+      font-size: 1.2rem;
+    }
+  
+    .score-board {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    #start {
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    h2 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  
+    .container {
+      gap: 1rem;
+      margin-top: 10rem;
+    }
+  
+    #rock, #paper, #scissor {
+      height: 80px;
+      width: 80px;
+      font-size: 1rem;
+    }
+  
+    .score-board {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      gap: 2rem;
+    }
+  
+    #start {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      padding: 0.5rem;
+    }
+  }
